@@ -1,12 +1,5 @@
 from setuptools import setup, find_packages
 from pathlib import Path
-import os
-
-dist_dir = "setup_f"
-bdist_dir = "build_f"
-
-os.makedirs(dist_dir, exist_ok=True)
-os.makedirs(bdist_dir, exist_ok=True)
 
 def read_requirements():
     requirements_path = Path(__file__).parent / "requirements.txt"
